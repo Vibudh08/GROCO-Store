@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" type="image/icon" href="image/favicon.png">
+   
+</head>
+<body>
+    
+<header class="header">
+    <a href="#" class="logo"><i class="fa fa-shopping-basket"></i> GROCO</a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#blogs">Blog</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fa fa-bars" id="menu-btn"></div>
+        <div class="fa fa-search" id="search-btn"></div>
+        <div class="fa fa-shopping-cart" id="cart-btn"></div>
+        <div class="fa fa-user" id="login-btn"></div>
+    </div>
+
+    <form class="search-form">
+        <input type="search" id="search-box" placeholder="Search here"/>
+        <label for="search-box" class="fa fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box b1">
+            <i class="del1 fa fa-trash"></i>
+            <img src="https://i.ibb.co/HFGfVSq/cart-img-1.png" alt="cart-img-1"/>
+            <div class="content">
+                <h3>Watermelon</h3>
+                <span class="price">₹<span class="p1">35</span>/-</span>
+                <span class="quantity">Qty : 1piece</span>
+            </div>
+        </div>
+
+        <div class="box b2">
+            <i class="del2 fa fa-trash"></i>
+            <img src="https://i.ibb.co/2M4W9C0/cart-img-2.png" alt="cart-img-2"/>
+            <div class="content">
+                <h3>Onion</h3>
+                <span class="price">₹<span class="p2">23</span>/-</span>
+                <span class="quantity">Qty : 2kg</span>
+            </div>
+        </div>
+
+        <div class="box b3">
+            <i class="del3 fa fa-trash"></i>
+            <img src="https://i.ibb.co/gd7VX5Z/cart-img-3.png">
+            <div class="content">
+                <h3>Chicken</h3>
+                <span class="price">₹<span class="p3">450</span>/-</span>
+                <span class="quantity">Qty : 1kg</span>
+            </div>
+        </div>
+
+
+        <div class="box b4">
+            <i class="del4 fa fa-trash"></i>
+            <img src="https://i.ibb.co/D4TZ2d5/product-1.png">
+            <div class="content">
+                <h3>Orange</h3>
+                <span class="price">₹<span class="p4">83</span>/-</span>
+                <span class="quantity">Qty : 1</span>
+            </div>
+        </div>
+
+
+        <div class="total">Total : ₹<span class="tot"></span>/-</div>
+        <a href="#" class="btn" onclick="myFunction()">Place order</a>
+    </div>
+    <form action="#" class="login-form">
+        <h3>Login Now</h3>
+        <input type="email" placeholder="Your email" class="box">
+        <input type="password" placeholder="Your password" class="box">
+        <p>Forget your password <a href="#">Click Here</a></p>
+        <p>Don't Have An Account <a href="#">Create Now</a></p>
+        <input type="submit" value="Login Now" class="btn">
+    </form>
+
+</header>
+
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>fresh and <span>organic</span> products for you</h3>
+        <p>Get your all daily need grocery items at one step.</p>
+
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+
+
+</section>
+
+<!-- Features section -->
+<section class="features" id="features">
+    <h1 class="heading"> Our <span>Features</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="https://i.ibb.co/7Jf7gvp/feature-img-1.png">
+            <h3>fresh and organic</h3>
+            <p>We Take Care of Your Favourite Products for You. Types: Groceries, Spices, Beverages, Bakery Food.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+         <div class="box">
+            <img src="https://i.ibb.co/CP36JGj/feature-img-2.png" alt="feature-img-2"/>
+            <h3>free delivery</h3>
+            <p>Get free delivery at cart value of above ₹199</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+         <div class="box">
+            <img src="https://i.ibb.co/BPQT94v/feature-img-3.png" alt="feature-img-3">
+            <h3>easy payment</h3>
+            <p>We accept all cards and you can also pay through UPI</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+     </div>
+</section>
+
+
+<!-- Product section -->
+
+<section class="products" id="products">
+    <h1 class="heading">Our <span>products</span></h1>
+    <div class="product">
+        
+            <div class=" box">
+                <img src="https://i.ibb.co/D4TZ2d5/product-1.png">
+                <h1>Fresh orange</h1>
+                <div class="price">3 pieces (550 g - 650 g)<br>₹83</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn crt1">Add To Cart</a>
+            </div>
+
+            <div class=" box">
+                <img src="https://i.ibb.co/V3cRHRR/product-2.png">
+                <h1>Fresh Onion</h1>
+                <div class="price">1kg<br>₹23</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a>
+            </div>
+
+            <div class=" box">
+                <img src="https://i.ibb.co/p2dqmZV/product-3.png">
+                <h1>Fresh meat</h1>
+                <div class="price">1kg<br>₹450</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a>
+            </div>
+
+            <div class=" box">
+                <img src="https://i.ibb.co/Bq9MKCG/product-4.png">
+                <h1>Fresh Cabbage</h1>
+                <div class="price">1 piece (300 g - 400 g)<br>₹17</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a>
+            </div>
+
+
+             <div class="box">
+                <img src="https://i.ibb.co/BNT8CRd/product-5.png">
+                <h1>Fresh potato</h1>
+                <div class="price">1kg<br>₹20</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a>
+            </div>
+
+            <div class="box">
+                <img src="https://i.ibb.co/K5QhvHL/product-6.png">
+                <h1>Hass Avocado</h1>
+                <div class="price">1 piece (250 g - 300 g)<br>₹120</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a>
+            </div>
+
+            <div class=" box">
+                <img src="https://i.ibb.co/tMXs9zc/product-7.png">
+                <h1>fresh carrot</h1>
+                <div class="price">500gm<br>₹28</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a>
+            </div>
+
+            <div class=" box">
+                <img src="https://i.ibb.co/bJktMTL/product-8.png">
+                <h1>Fresh lemon</h1>
+                <div class="price">250 g - 300 g<br>₹60</div>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">Add To Cart</a>
+            </div>
+    
+    </div>
+
+</section>
+
+
+
+<!-- Categories section -->
+
+<section class="categories" id="categories">
+    <h1 class="heading">Product <span>Categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="https://i.ibb.co/StHtqCZ/cat-1.webp">
+            <h3>Vegetables</h3>
+            <p>Upto 40% off</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+         <div class="box">
+            <img src="https://i.ibb.co/34rnfX9/cat-2.webp" alt="cat-2">
+            <h3>Fresh fruits</h3>
+            <p>Upto 30% off</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+         <div class="box">
+            <img  src="https://i.ibb.co/SVNFpfN/cat-3.webp" alt="cat-3">
+            <h3>Dairy Products</h3>
+            <p>Upto 40% off</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+
+         <div class="box">
+            <img src="https://i.ibb.co/5n47gF1/cat-4.webp" >
+            <h3>Fresh meat</h3>
+            <p>Upto 40% off</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Blog section -->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading">Our <span>Blogs</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="https://i.ibb.co/W6ShbmR/blog-1.jpg">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"></i> By User</a>
+                    <a href="#"><i class="fa fa-calendar"></i> 28th apr, 2023</a>
+                </div>
+                <h3>Online Grocery business Challenges and Their Potential Solutions.</h3>
+                <p>he COVID-19 pandemic has changed the way we go about our lives- from work to shopping, and even buying groceries and essential supplies- it seems as if everything about the world has transformed overnight.</p><br>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="https://i.ibb.co/19Cn77b/blog-2.jpg" alt="blog-2">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"></i> By User</a>
+                    <a href="#"><i class="fa fa-calendar"></i> 28th apr, 2023</a>
+                </div>
+                <h3>Time To Go Green With Online Grocery Stores!</h3>
+                <p>Online grocery shopping is gaining traction these days. There is a parallel relation between buying groceries online and contributing to the environment. Overall, e-commerce had about 30% lower energy consumption and CO2 emissions compared to traditional retail.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="https://i.ibb.co/SDgxh9F/blog-3.jpg" alt="blog-3">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"><i class="fa fa-user"></i> By User</a>
+                    <a href="#"><i class="fa fa-calendar"></i> 28th apr, 2023</a>
+                </div>
+                <h3>5 Secrets To Optimize Grocery Delivery From Your Stores.</h3>
+                <p>Online grocery delivery is gaining a lot of popularity these days. Did you know that Digital grocery sales estimation in the US is to reach $59.5 billion by 2023 from $23.9 billion in 2018. </p><br>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+<!-- Footer section -->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Groco<i class="fa fa-shopping-basket"></i></h3>
+            <p>Feel free to follow us on our social media handle all links are given below.</p>
+            <div class="share">
+                <a href="https://www.linkedin.com/in/vibudh-rathore-b4a74722a/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/Vibudh08" class="fa fa-github"></a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 8736977153</a>
+            <a href="#" class="links"><i class="fa fa-envelope"></i> vibudhrathore8@gmail.com</a>
+            <a href="#" class="links"><i class="fa fa-map-marker"></i> Noida, India</a>
+            
+        </div>
+
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i> Home</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i> Features</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i> Product</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i> Categories</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i> Blogs</a>
+        </div>
+
+
+        <div class="box">
+            <h3>Newsletter</h3>
+            <p>Subscribe for latest update</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+            <img src="https://i.ibb.co/N1ZqkQJ/payment.png" class="payment-img">
+        </div>
+
+
+    </div>
+    <div class="credit"><span>Groco </span><span>Pvt. </span><span>Ltd.</span> | All rights reserved</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
